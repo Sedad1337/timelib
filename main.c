@@ -12,18 +12,27 @@ int ist_schaltjahr = 0;
 int main() {
     //Aufruf der einzelnen Funktionen
     ArrayMonatstage();
-    Eingabe();
+    imput_date();
     Berechnung();
     Ausgabe();
 }
-void Eingabe() {
+void input_date(int *pointerYear, int *pointerMonth, int *pointerDay) {
     //Funktion zur Eingabe der Werte Tag, Monat & Jahr
-    printf("Tag eingeben\n");
-    scanf("%i",&TagImMonat);
-    printf("Monat eingeben\n");
-    scanf("%i",&MonatImJahr);
-    printf("Jahr eingeben\n");
-    scanf("%i",&AktuellesJahr);
+    
+    do {
+        printf("Tag eingeben\n");
+        scanf("%i",&TagImMonat);
+        printf("Monat eingeben\n");
+        scanf("%i",&MonatImJahr);
+        printf("Jahr eingeben\n");
+        scanf("%i",&AktuellesJahr);
+    
+        if(exists_date(TagImMonat,MonatImJahr,AktuellesJahr) !=1) {
+            printf("\nInput is not a valid date.Please try again.\n\n\n");
+        }
+
+    }
+    while (exists_date(TagImMonat,MonatImJahr,AktuellesJahr) !=1)
 }
 
 void Berechnung() {
