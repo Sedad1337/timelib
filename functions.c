@@ -1,15 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 void Berechnung() {
-    //Funktion, welche für die Berechnung zuständig ist
+    //Funktion, welche fï¿½r die Berechnung zustï¿½ndig ist
 
-    for(int i = 1; i < getMonthOfYear(); i++)  //Prüft ob der Monat komplett durchgelaufen ist , falls ja werden die Tage draufgerechnet
+    for(int i = 1; i < getMonthOfYear(); i++)  //Prï¿½ft ob der Monat komplett durchgelaufen ist , falls ja werden die Tage draufgerechnet
         {
             getDayOfMonth() += ArrayMonthDays();
             //Monatstage[i];
         }
 
-        if(getCurrentYear() %4 == 0)   //Prüft ob es ein Schaltjahr ist
+        if(getCurrentYear() %4 == 0)   //Prï¿½ft ob es ein Schaltjahr ist
         {
             if(getCurrentYear() %100 == 0)
             {
@@ -51,7 +51,7 @@ int getIsLeapYear(){
 }
 void ArrayMonthDays() {
     //Funktion, welche die Arraywerte initialisiert
-    int Monatstage[12]; //Array der Größe 12, entspricht der Anzahl Monate
+    int Monatstage[12]; //Array der GrÃ¶ÃŸe 12, entspricht der Anzahl Monate
     Monatstage[1]=31;
     Monatstage[2]=28;
     Monatstage[3]=31;

@@ -16,17 +16,17 @@ void input_date(int *pointerYear, int *pointerMonth, int *pointerDay) {
 
     do {
         printf("Enter day\n");
-        scanf("%i",&TagImMonat);
+        scanf(getDayOfMonth());
         printf("Enter month\n");
-        scanf("%i",&MonatImJahr);
+        scanf(getMonthOfYear());
         printf("Enter year\n");
-        scanf("%i",&AktuellesJahr);
+        scanf(getCurrentYear());
 
-        if(exists_date(TagImMonat,MonatImJahr,AktuellesJahr) !=1) {
-            printf("\nInput is not a valid date.Please try again.\n\n\n");
+        if(exists_date(getDayOfMonth(),getMonthOfYear(),getCurrentYear()) !=1) {
+            printf("\nInput is not a valid date. Please try again.\n\n");
         }
 
     }
-    while (exists_date(TagImMonat,MonatImJahr,AktuellesJahr) !=1);
+    while (exists_date(getDayOfMonth(),getMonthOfYear(),getCurrentYear()) !=1);
 }
 
