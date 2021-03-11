@@ -1,5 +1,9 @@
 # depslib dependency file v1.0
-1615207111 source:c:\git\wichmanngit2\main.c
+1615453015 source:c:\git\wichmanngit2\main.c
 	<stdio.h>
 	<stdlib.h>
+	<stdbool.h>
+	"functions.h"
+
+1615453436 c:\git\wichmanngit2\functions.h
 
